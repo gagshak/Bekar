@@ -20,8 +20,8 @@ import {CartProvider} from './components/ContextReducer';
 
 function App() {
   return (
-  <CartProvider>
   <HashRouter>
+  <CartProvider>
     <Router>
       <div>
         <Routes>
@@ -32,8 +32,9 @@ function App() {
         </Routes>
       </div>
     </Router>
-    </HashRouter>
+ 
   </CartProvider>
+  </HashRouter>
   );
 }
 
