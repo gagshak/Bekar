@@ -22,13 +22,13 @@ function App() {
   return (
   <HashRouter>
   <CartProvider>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Routes>
-          <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/login" element={<Login/>}/>
-          <Route exact path="/createuser" element={<SignUp/>}/>
-          <Route exact path="/myorder" element={<MyOrder/>}/>
+          <Route exact path="/" render="" element={<Home/>}/>
+          <Route exact path="/login"  element={<Login/>}/>
+          <Route exact path="/createuser"  element={<SignUp/>}/>
+          <Route exact path="/myorder"  element={<MyOrder/>}/>
         </Routes>
       </div>
     </Router>
