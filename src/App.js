@@ -4,6 +4,7 @@ import Home from './screens/Home';
 
 import {
   BrowserRouter as Router,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -20,6 +21,7 @@ import {CartProvider} from './components/ContextReducer';
 function App() {
   return (
   <CartProvider>
+  <HashRouter>
     <Router>
       <div>
         <Routes>
@@ -30,6 +32,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </HashRouter>
   </CartProvider>
   );
 }
