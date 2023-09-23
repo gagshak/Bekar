@@ -4,7 +4,6 @@ import Home from './screens/Home';
 
 import {
   BrowserRouter as Router,
-  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -20,12 +19,12 @@ import {CartProvider} from './components/ContextReducer';
 
 function App() {
   return (
-  <HashRouter>
+
   <CartProvider>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/Bekar">
       <div>
         <Routes>
-          <Route exact path="/" render="" element={<Home/>}/>
+          <Route exact path="/Bekar" render="" element={<Home/>}/>
           <Route exact path="/login"  element={<Login/>}/>
           <Route exact path="/createuser"  element={<SignUp/>}/>
           <Route exact path="/myorder"  element={<MyOrder/>}/>
@@ -34,7 +33,7 @@ function App() {
     </Router>
  
   </CartProvider>
-  </HashRouter>
+
   );
 }
 
