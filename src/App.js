@@ -21,10 +21,10 @@ function App() {
   return (
 
   <CartProvider>
-    <Router basename="/Bekar">
+    <Router >
       <div>
         <Routes>
-          <Route exact path="/Bekar" render="" element={<Home/>}/>
+          <Route exact path="/" render="" element={<Home/>}/>
           <Route exact path="/login"  element={<Login/>}/>
           <Route exact path="/createuser"  element={<SignUp/>}/>
           <Route exact path="/myorder"  element={<MyOrder/>}/>
