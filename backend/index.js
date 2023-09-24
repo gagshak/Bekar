@@ -3,7 +3,7 @@ const app = express()
 const mongoDb = require('./db');
 mongoDb();
 
-const port = 5000
+const port = process.env.port || 5000
 
 
 app.use((req,res,next)=>{
